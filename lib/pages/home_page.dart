@@ -20,6 +20,13 @@ class HomePage extends StatelessWidget {
               },
               child: const Text('Context Extensions'),
             ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed('/widget_margin_x');
+              },
+              child: const Text('Widget Margin X'),
+            ),
           ],
         ),
       ),
