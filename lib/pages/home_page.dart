@@ -27,6 +27,13 @@ class HomePage extends StatelessWidget {
               },
               child: const Text('Widget Margin X'),
             ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed('/widget_padding_x');
+              },
+              child: const Text('Widget Padding X'),
+            ),
           ],
         ),
       ),
