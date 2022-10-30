@@ -41,6 +41,13 @@ class HomePage extends StatelessWidget {
               },
               child: const Text('Widget Sliver Box'),
             ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed('/get_view');
+              },
+              child: const Text('Get View'),
+            ),
           ],
         ),
       ),
