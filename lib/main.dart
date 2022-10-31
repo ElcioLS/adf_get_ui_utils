@@ -1,4 +1,6 @@
 import 'package:adf_get_ui_utils/pages/context_ext/context_ext_page.dart';
+import 'package:adf_get_ui_utils/pages/get_responsive_view/get_reponsive_view_controller.dart';
+import 'package:adf_get_ui_utils/pages/get_responsive_view/get_responsive_view_page.dart';
 import 'package:adf_get_ui_utils/pages/get_view/get_view_controller.dart';
 import 'package:adf_get_ui_utils/pages/get_view/get_view_page.dart';
 import 'package:adf_get_ui_utils/pages/home_page.dart';
@@ -36,6 +38,10 @@ class MyApp extends StatelessWidget {
             binding: BindingsBuilder.put(() => GetViewController()),
             // binding: BindingsBuilder(() => Get.lazyPut(() => GetViewController())),
             page: () => const GetViewPage()),
+        GetPage(
+            name: '/get_responsive_view',
+            binding: BindingsBuilder.put(() => GetReponsiveViewController()),
+            page: () => GetResponsiveViewPage()),
       ],
     );
   }
